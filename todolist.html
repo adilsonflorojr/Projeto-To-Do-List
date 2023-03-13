@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To do List</title>
+	<link rel="stylesheet" type="text/css" href="styletodolist.css">
+</head>
+<body>
+<script>
+
+    //create
+    function todolist(){
+        let texto = document.getElementById('atividade').value;
+      
+        if( texto == ''){
+            alert("Digite algo!");
+        } else {
+            
+            let container = document.getElementById('listas');
+            var criarlista = document.createElement('li');
+            criarlista.classList.add('aleatorio');
+
+            container.appendChild(criarlista)
+
+            criarlista.innerHTML = `${texto}`;
+
+            let criarbotao = document.createElement('button')
+            criarbotao.classList.add('botaocontainer')
+            criarbotao.innerHTML = `Meta concluída`;
+            criarlista.appendChild(criarbotao);
+
+            document.getElementById('atividade').value = '';
+            document.getElementById('atividade').focus();
+
+        }  
+    }
+
+    //remove
+    document.addEventListener('click', (evento) =>{    
+        let onde = evento.target;
+        let proximo = onde.closest('li');
+
+        if(onde.classList.contains("botaocontainer")){
+            proximo.remove();
+        }
+
+    }) 
+</script>
+	<div class="container">
+
+        <footer>
+            <form id="formulario">
+                <input type = "text" id = "atividade" required = "" autofocus = "" placeholder = " Qual atividade gostaria de colocar como meta?">
+                <button id = "organizarbutton"  type = "button" onclick = "todolist()">   <p class="design"> + </p> <p class = "adicionar"> Adicionar </p></button>
+            </form>
+        </footer>
+
+        <main>
+            <ul id = "listas"></ul>
+        </main>
+
+	</div>
+</body>
+</html>

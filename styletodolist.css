@@ -1,0 +1,122 @@
+body{
+	background-color:  rgba(0, 0, 0, 0.92);
+	height: 100vh;
+	width: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-top: 1%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+.aleatorio{
+    width: auto;
+    min-width: 65%;
+    height: 3vh;
+    list-style: none;
+    background-color: rgba(100, 0, 187, 0.329);
+    border-radius: 10px;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 2%;
+    align-items: center;
+    padding: 0% 1%;
+    flex-direction: row;
+}
+#organizarbutton{
+    display: flex;
+    color: rgb(125, 105, 172);
+    border-radius: 10px;
+    padding: 1% 4%;
+    font-size: 18px;
+    align-items: center;
+    border: 2px solid rgb(59, 0, 153);
+    gap: 10px;
+    box-shadow: 4px 4px 20px 1px rgb(59, 0, 153);
+    cursor: pointer;
+    background-color: transparent;
+}
+#listas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+form #atividade{
+    width: 60%;
+    height: 5vh;
+
+}
+#formulario{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4%;
+}
+footer{
+    margin-top: 3vh;
+}
+.organizar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    display: inline;
+}
+*{
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+    padding: 0;
+    margin: 0;
+	box-sizing: border-box;	
+}
+.container{
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    border-radius: 50px;
+    border: 2px solid rgb(59, 0, 153);
+
+}
+.design{
+    color:  rgb(59, 0, 153);
+}
+
+.botaocontainer{
+    width: 15%;
+    height: auto;
+    color: white;
+    background-color: transparent;
+    border: 2px solid rgb(59, 0, 153);
+    margin: 2%;
+    box-shadow: 4px 4px 20px 1px rgb(59, 0, 153);
+    cursor: pointer;
+    border-radius: 20px;
+}
+#atividade{
+    width: 25%;
+    height: auto;
+    color: white;
+    background-color: black;
+    border: 2px solid rgb(59, 0, 153);
+    text-align: center;
+}
+
+.adicionar{
+    color: rgb(125, 105, 172);
+    font-size: 18px;
+    align-items: center;
+}
+#atividade:focus-within{
+    border: 2px solid rgb(59, 0, 153);
+    outline: none;
+}
+
+@media (max-width: 1700px){
+    .adicionar{
+        display: none;
+        color: rgb(125, 105, 172);
+        font-size: 18px;
+        align-items: center;
+    }
+}
