@@ -4,5 +4,5 @@
 
 <ul>
   <li> HTML e CSS </li>
-  <li JavaScript </li>
+  <li> JavaScript </li>
 </ul>
